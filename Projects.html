@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>My Projects</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <style>
+            body {
+                position: relative;
+                font-family: 'Press Start 2P', monospace;
+                margin: 20px;
+                background-color: black;
+                color: white;
+            }
+            .game-screen {
+                border: 10px solid #333;
+                padding: 20px;
+                background-color: #000;
+                box-shadow: 0 0 20px #ff8800;
+                max-width: 1000px;
+                width: 100%;
+                margin: auto;
+            }
+            h1 {
+                font-size: 18px;
+                color: rgb(207, 117, 0);
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .projects-container {
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+            }
+            .project {
+                border: 3px solid rgb(207, 117, 0);
+                padding: 15px;
+                background-color: #111;
+            }
+            .project h2 {
+                font-size: 14px;
+                color: rgb(207, 117, 0);
+                margin-top: 0;
+            }
+            iframe {
+                width: 100%;
+                min-height: 600px;
+                border: 2px solid rgb(207, 117, 0);
+                background-color: white;
+            }
+            .note {
+                color: #ccc;
+                font-size: 12px;
+                margin-top: 10px;
+                text-align: center;
+            }
+            
+            button {
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                padding: 10px 20px;
+                font-size: 14px;
+                color: white;
+                background-color: rgb(207, 117, 0);
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                font-family: 'Press Start 2P', monospace;
+                
+            }
+            button:hover {
+                background-color: #ff6600;
+            }
+
+        </style>
+    </head>
+    <body>
+        <button onclick="window.location.href='Main.html'">Go Back</button>
+        <div class="game-screen">
+            <h1>My Projects</h1>
+            <div class="projects-container">
+                <div class="project">
+                    <h2>Project 1</h2>
+                    <iframe src="C:\Users\Splitz\Documents\PortfolioHTML\PDF_exemplos\ProjetoFinal_9196_TiagoRodrigo.pdf" title="Project 1 PDF"></iframe>
+                </div>
+                <div class="project">
+                    <h2>Project 2</h2>
+                    <iframe src="C:\Users\Splitz\Documents\PortfolioHTML\PDF_exemplos\TarefaFinal_TiagoRodrigo_9197.pdf" title="Project 2 PDF"></iframe>
+                </div>
+            </div>
+            <!-- <p class="note">Replace <code>path/to/your/fileX.pdf</code> with your actual PDF files.</p> -->
+        </div>
+    </body>
+</html>
